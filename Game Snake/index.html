@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="jogo" id="cabecalho">
+        <div class="detalhejogo">
+            <p id="Jogador"></p><br>
+            <div class="placar">
+                <span id="point" class="pontos">Pontuação: 0</span>
+                <span id="bestPoint" class="melhorpontos">Melhor Pontuação: 0</span>
+        </div>
+        </div>
+        <div class="tabuleiro">
+        </div>
+    </header>
+    <div class="menu-inicial">
+        <div class="logo">
+            <h1>Snake</h1>
+            <div class="Nivel">
+                <input type="radio" name="Easy" id="Easy" onclick="SelectCheckBox('easy','#Medium','#Hard')"><label
+                    for="easy">Easy</label>
+                <input type="radio" name="Medium" id="Medium" onclick="SelectCheckBox('Medium','#Easy','#Hard')"><label
+                    for="Medium">Medium</label>
+                <input type="radio" name="Hard" id="Hard" onclick="SelectCheckBox('Hard','#Easy','#Medium')"><label
+                    for="Hard">Hard</label>
+                <br>
+                <input class="Nome" type="text" id="NomeJogador" placeholder="Digite seu nome">
+            </div>
+            <button type="submit" onclick="PlayGame()">Play</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

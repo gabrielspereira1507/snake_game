@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: rgb(21, 21, 145);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #e3f2fd;
+}
+
+.jogo {
+    display: none;
+}
+.jogoVisible {
+    display: block;
+}
+.logo{
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 400%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo input{
+    font-size: 10px;
+}
+
+.detalhejogo {
+    text-align: center;
+    color: #88c6dc;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 27px;
+    justify-content: space-between;
+}
+.detalhejogo p{
+    font-size: 130%;
+    color: white;
+}
+
+
+.placar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabuleiro {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr)/repeat(30, 1fr);
+    background: #1b194a
+}
+
+.tabuleiro .comida {
+    border-radius: 80%;
+    background-color: rgb(26, 227, 23);
+}
+
+.tabuleiro .cabeca {
+    border-radius: 30% 30%;
+    background-color: rgb(236, 36, 36);
+}
+
+.menu-inicial {
+    text-align: center;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 5%;
+    width: 500px;
+    height: 500px;
+    background: url(../img/Logo.jpeg);
+    color: white;
+}
+
+.menu-inicial h1 {
+    margin-top: 10%;
+    padding: 9%;
+}
+
+
+.menu-inicial button {
+    margin-top: 15px;
+    border-radius: 20%;
+    padding-inline: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #1b194a;
+    border: solid white 1px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.menu-inicial button:hover {
+background-color: white;
+color: blue;
+}
+
+.Nome {
+    display: none;
+}
+.NomeVisible {
+    display: block;
+    margin-left: 37%;
+    margin-top: 20px;
+    font-size: 200px;
+    padding: 5px;
+    size: 30px;
+}
